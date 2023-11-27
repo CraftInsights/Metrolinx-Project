@@ -1,0 +1,680 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+/* Styles for announcement section */
+.announcement {
+    background: linear-gradient(to right, #131313, #858585);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.badge {
+    background-color: #B6DC79;
+    color: #16111C;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.announcement-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Styles for navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.logo-link {
+    display: inline-block; /* Allows for proper spacing and clickable area */
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.logo {
+    display: block; /* Ensures the image doesn't have extra space around it */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px; /* Space between menu items */
+}
+
+.nav-link {
+    color: #262626;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none; /* Removes underline from links */
+    display: flex; /* Align icon with text */
+    align-items: center; /* Center icon with text vertically */
+    margin-right: 8px; /* Adjusted space for the icon */
+}
+
+.nav-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; /* Space between icon and text */
+    order: -1; /* Positions the icon before the text */
+}
+
+/* Styles to change link appearance on hover */
+.nav-link:hover, .logo-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Styles for hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted to be auto to contain the .hero-container */
+    padding: 2rem; /* This adds spacing around the .hero-container */
+    margin-top: 3rem; /* Adds space above the hero section */
+}
+
+.hero-container {
+    width: 75rem;
+    height: 37.5rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: url('/assets/imgs/metrolinxgif.gif') no-repeat center center; /* Path to the hero image */
+    background-size: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2rem;
+    text-align: left;
+}
+
+.hero h1 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 4.9rem */
+    letter-spacing: -0.105rem;
+    margin-top: 0; /* Remove top margin if any */
+}
+
+.hero-description {
+    width: 30.5625rem; /* 488.9px */
+    color: rgba(255, 255, 255, 0.90); /* Slightly transparent white */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem; /* 28px */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 2.45rem */
+    text-align: left; 
+    margin-bottom: 2rem; /* Equal spacing below the text */
+}
+
+.learn-more-btn {
+    width: 14.0625rem; /* 225px */
+    height: 3.125rem; /* 50px */
+    flex-shrink: 0;
+    border-radius: 0.75rem; /* 12px */
+    background: #B6DC79;
+    box-shadow: 0px 4px 4px rgba(61, 162, 255, 0.15);
+    color: #262626; /* Text color */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem; /* 20px */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 1.75rem */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the text vertically and horizontally */
+    text-decoration: none;
+    padding: 0; /* Adjusted since width and height are set */
+    border: none; /* Removes any default border */
+    cursor: pointer; /* Changes the mouse cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    align-self: flex-start; /* Aligns the button to the start (left) */
+}
+
+.learn-more-btn:hover {
+    background-color: #9db369; /* A slightly darker shade for the hover effect */
+}
+
+/* Styles for Learning Path section */
+.learning-path {
+    display: flex;
+    width: 100%; /* Adjusted to the specified width */
+    padding: 2.5625rem 9.75rem 2.75rem 10rem; /* Top, Right, Bottom, Left padding */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    background: #191818; /* Dark background as specified */
+    color: white; /* Assuming text color is white for contrast */
+    margin: 0 auto; /* Center the section on the page */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+
+.learning-path h2 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 3.15rem */
+    letter-spacing: -0.0675rem;
+    margin: 0 4rem;
+}
+
+.learning-path p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular font weight */
+    font-size: 1rem; /* Example size, adjust as needed */
+    max-width: 80%; /* Prevents text from becoming too wide on larger screens */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    gap: 2rem; /* Space between the cards */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    margin: 0 7.5rem; /* Centers the card-container itself */
+}
+
+.card {
+    width: 35rem;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 1rem; /* This adds rounded corners to the card */
+}
+
+.card-top {
+    width: 35rem;
+    height: 19.5rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-top-first {
+    background-color: #FF8674; /* Color for the first card's rectangle */
+}
+
+.card-top-second {
+    background-color: #FBD865; /* Different color for the second card's rectangle */
+}
+
+.card-image {
+    width: 15.625rem;
+    height: 15.625rem;
+    flex-shrink: 0;
+    /* Add styles for your image if needed */
+}
+
+.card-content {
+    padding: 1rem; /* Maintain padding around the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+    height: calc(15.1875rem - 2rem); /* Adjust this calculation based on the actual available space */
+}
+
+.card-content h3 {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.0675rem;
+    margin: 0; /* Remove default margins */
+    margin-bottom: 0.5rem; /* Reduced bottom margin to save space */
+}
+
+.card-content .card-subtitle {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0; /* Remove default margins */
+    margin-bottom: 0.5rem; /* Reduced bottom margin to save space */
+    flex-grow: 1; /* Allows subtitle to grow and push the button down */
+}
+
+.card-content .card-button {
+    width: 6.25rem;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #3DA2FF;
+    box-shadow: 0px 4px 4px 0px rgba(61, 162, 255, 0.15);
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none; /* Remove underline from link */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text vertically and horizontally */
+    border: none; /* Remove border if it was previously set */
+    cursor: pointer;
+    margin-top: auto; /* This will push the button to the bottom */
+    margin-bottom: 2rem; /* Space at the bottom, adjust as needed */
+}
+
+.rounded-rectangle {
+    width: 75rem;
+    height: 11.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: #B6DC79;
+    margin-top: 5rem; /* Gap between the cards and the rectangle */
+    margin-bottom: 5rem; /* Optional: Space below the rectangle */
+}
+
+.inner-rectangle {
+    width: 37.5rem;
+    height: 11.4375rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: url('/assets/imgs/constructionworkers.jpg') no-repeat center center / 100% 185.519%, #304F00;
+    background-position: center top;
+    /* Align to the right side while staying inside the rounded-rectangle */
+    margin-left: auto;
+}
+
+
+/* Add this CSS to style the container for the inner-rectangle and white square */
+.content {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust the margin to create spacing between the square and .inner-rectangle */
+}
+
+/* CSS for the white square */
+.white-square {
+    width: 6.25rem;
+    height: 6.25rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 0.625rem;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.10), 0px 1px 5px 0px rgba(0, 0, 0, 0.10), 0px 10px 50px -20px rgba(0, 0, 0, 0.20);
+    position: relative;
+}
+
+/* CSS for the SVG */
+.white-square svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS for the text container */
+.text-container {
+    margin-left: 2rem; /* Adjust the margin as needed */
+}
+
+/* CSS for the progress text */
+.learning-path .progress-text {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 2.45rem */
+    letter-spacing: -0.0525rem;
+    margin-bottom: 0.5rem; /* Remove margin at the bottom */
+}
+
+/* CSS for the completion text */
+.learning-path .completion-text {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 1.575rem */
+    width: 22.9375rem;
+    margin-top: 0; /* Remove margin at the top */
+}
+
+.more-path {
+    display: flex;
+    width: 100%; /* Adjusted to the specified width */
+    padding: 2.5625rem 9.75rem 2.75rem 10rem; /* Top, Right, Bottom, Left padding */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    margin: 0 auto; /* Center the section on the page */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.more-path h2 {
+    color: #000; /* Adjust the color if needed */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem; /* Same font size */
+    font-style: normal;
+    font-weight: 700; /* Same font weight */
+    line-height: 140%;
+    letter-spacing: -0.0675rem;
+    margin: 0 4rem; /* Same margin */
+}
+
+.more-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Adjust the gap between cards */
+    margin: 0 auto; /* Center the card-container on the page */
+}
+
+.more-card {
+    width: 22.5rem;
+    height: 30.625rem;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    /* Add other card styles as needed */
+}
+
+.more-card-top {
+    width: 22.5rem;
+    height: 13.75rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gradient backgrounds for each card */
+.more-card .card-top-first {
+    background: linear-gradient(249deg, #51ABFF 0%, #BD00FF 100.87%);
+}
+
+.more-card .card-top-second {
+    background: linear-gradient(249deg, #FF8951 0%, #BD00FF 100.87%);
+}
+
+.more-card .card-top-third {
+    background: linear-gradient(249deg, #00FFD1 0%, #04C200 100.87%);
+}
+
+/* Styles for the images inside the card tops */
+.more-card .card-top-first img,
+.more-card .card-top-second img,
+.more-card .card-top-third img {
+    width: 12.5rem;
+    height: 12.5rem;
+    flex-shrink: 0;
+    /* Center the image within the gradient background */
+    object-fit: cover;
+}
+
+.more-card-title {
+    width: 14.3125rem;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 2.45rem */
+    letter-spacing: -0.0525rem;
+    /* Additional styling as needed */
+    margin: 1rem auto; /* Center the title and add margin */
+    text-align: left;
+}
+
+.more-card-subtitle {
+    width: 15.125rem;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 1.575rem */
+    margin: 0.5rem auto; /* Adjust margin as needed */
+    text-align: left;
+}
+
+.more-card-button {
+    width: 5.625rem;
+    height: 2.625rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #3DA2FF;
+    box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.10), 0px 1px 5px 0px rgba(0, 0, 0, 0.10), 0px 10px 50px -20px rgba(0, 0, 0, 0.20);
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 1.575rem */
+    text-decoration: none; /* Optional: Remove if you prefer underlined links */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem; /* Adjust top margin */
+    margin-left: 3.5rem;
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo-link {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-icon {
+        margin-right: 8px; /* Keep space between icon and text */
+        position: relative; /* Keeps icon in line with the text */
+    }
+
+    .badge {
+        margin-bottom: 10px;
+    }
+
+    .announcement {
+        padding: 10px 0;
+    }
+
+    .hero-container {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Height adjusts to content */
+        padding: 1rem; /* Smaller padding */
+        border-radius: 1rem; /* Optionally adjust the border-radius for mobile */
+        margin: 0 1rem; /* Add margin to prevent content from touching the screen edges */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Smaller font size for the title */
+        line-height: 1.2; /* Adjust line height for better readability */
+        padding: 0; /* Remove padding to use the full width */
+        margin-top: 1rem; /* Add top margin for spacing */
+    }
+
+    .hero-description {
+        font-size: 1rem; /* Smaller font size for the description */
+        line-height: 1.4; /* Adjust line height for better readability */
+        word-wrap: break-word; /* Ensures that long words will break and wrap onto the next line */
+        overflow-wrap: break-word; /* Ensures that long words will break and wrap onto the next line */
+        margin-bottom: 1rem; /* Add bottom margin for spacing */
+        padding: 0 1rem; /* Add horizontal padding to keep the text from touching the edges */
+        width: auto; /* Remove any specific width to allow the text to adjust to the container size */
+    }
+
+    .learn-more-btn {
+        width: auto; /* Allow the button to size according to its content */
+        padding: 0.1rem 0.3rem; /* Adjust the padding to change the button size */
+        font-size: 1rem; /* Smaller font size for the button text */
+        margin-bottom: 1rem; /* Add some space below the button */
+    }
+
+    .learning-path {
+        width: auto; /* Take the full width on smaller screens */
+        padding: 2rem; /* Reduced padding on smaller screens */
+        gap: 2rem; /* Reduced gap on smaller screens */
+    }
+
+    .learning-path h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 1rem; /* Reduce the gap between cards */
+        margin: 0 1rem; /* Adjust the margin to fit the screen size */
+    }
+
+    .card {
+        width: 100%; /* Full width for each card */
+        margin-bottom: 1rem; /* Add some space between cards */
+    }
+
+    .card-top {
+        width: 100%; /* Full width of the card */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .card-image {
+        width: 100%; /* Full width of the card-top section */
+        height: auto; /* Adjust height automatically */
+        object-fit: cover; /* Ensures the image covers the card-top area */
+    }
+
+    .card-content {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .card-content h3, .card-content .card-subtitle {
+        font-size: 1rem; /* Smaller font size for text inside the card */
+    }
+
+    .card-content .card-button {
+        padding: 0.5rem 1rem; /* Adjust button padding for better touch targets */
+        font-size: 0.9rem; /* Smaller font size for the button */
+    }
+
+    .rounded-rectangle {
+        width: auto; /* Full width on smaller screens */
+    }
+
+    .inner-rectangle {
+        width: auto; /* Adjust the width for smaller screens */
+        min-height: 15rem; /* Set a minimum height to prevent it from disappearing */
+        background-size: cover; /* Adjust the background size to cover the available area */
+        background-position: center center; /* Center the background image */
+        margin: 1rem auto; /* Center the inner-rectangle horizontally and add spacing */
+        overflow: hidden; /* Ensure the inner-rectangle contains its content */
+    }
+
+    /* Additional styles for the content within the inner-rectangle */
+    .content {
+        margin-left: 0; /* Remove margin for better spacing */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    /* Adjust styles for the white square */
+    .white-square {
+        width: 5rem; /* Reduce the size of the square */
+        height: 5rem; /* Reduce the size of the square */
+        margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+    }
+
+    /* Adjust styles for the text container */
+    .text-container {
+        margin-left: 0; /* Remove margin for better spacing */
+        text-align: center; /* Center text horizontally */
+    }
+
+    /* Adjust styles for the progress text */
+    .learning-path .progress-text {
+        font-size: 1.25rem; /* Adjust font size for better readability */
+        margin: auto;
+    }
+
+    /* Adjust styles for the completion text */
+    .learning-path .completion-text {
+        font-size: 1rem; /* Adjust font size for better readability */
+        width: auto; /* Remove specific width to allow text to adjust */
+        margin: auto;
+    }
+
+    .more-card-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem; /* Adjust gap as needed */
+        margin: 0 1rem; /* Adjust margin as needed */
+        padding-bottom: 1rem; /* Add padding to allow space for scrollbar */
+    }
+
+    .more-card {
+        flex: 0 0 auto; /* Cards don't grow but are automatically sized */
+        min-width: 60vw; /* Minimum width of the card */
+        max-width: 80vw; /* Maximum width of the card */
+        width: auto; /* Width auto for flexibility */
+        /* Additional styles for the cards */
+    }
+
+    /* Adjust the width and layout of the elements inside the card if necessary */
+    .more-card .more-card-top img {
+        width: auto; /* Adjust if needed */
+        max-width: 100%; /* Ensure image does not overflow the card */
+        height: auto; /* Adjust for maintaining aspect ratio */
+    }
+}
+
+

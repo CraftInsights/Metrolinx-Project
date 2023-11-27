@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrolinx Learning Hub</title>
+    <!-- Other head elements -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha384-...">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/sidebars.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="https://www.metrolinx.com/en" class="logo-link">
+            <img src="/assets/imgs/Navbar/logo.svg" alt="Metrolinx Learning Hub Logo" class="logo">
+        </a>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="https://www.metrolinx.com/en/about-us" class="nav-link">
+                    <img src="/assets/imgs/Navbar/arrow.svg" alt="downward arrow" class="nav-icon">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.metrolinx.com/en/news" class="nav-link">
+                    <img src="/assets/imgs/Navbar/arrow.svg" alt="downward arrow" class="nav-icon">
+                    News
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.metrolinx.com/en/projects-and-programs" class="nav-link">
+                    <img src="/assets/imgs/Navbar/arrow.svg" alt="downward arrow" class="nav-icon">
+                    Projects and Programs
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <!-- Main content topmost section -->
+        <div class="content-header">
+          <div class="d-flex align-items-center">
+              <a href="course_intro.html" class="circle-link">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 8 14" fill="none">
+                        <path d="M7 1L1 7L7 13" stroke="var(--blue-600, #2563EB)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+              </a>
+              <!-- Text -->
+              <span class="course-text">Welcome to the course!</span>
+          </div>
+          
+          <!-- Navigation and Complete button -->
+          <div class="navigation">
+              <!-- Previous button -->
+              <button type="button" id="prev-button" class="btn btn-outline-primary">Prev</button>
+              <!-- Next button -->
+              <button type="button" id="next-button" class="btn btn-outline-primary">Next</button>
+              <!-- Mark as Complete button -->
+              <button type="button" id="mark-complete-button" class="btn btn-outline-success">Mark as Complete</button>
+          </div>
+        </div>
+
+        <!-- Sidebar for Course Content -->
+        <div class="col-md-3 p-3 bg-white">
+          <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24"><use xlink:href="#"/></svg>
+                <span class="fs-5 fw-semibold">PPE Standards</span>
+                <i class="fa-solid fa-book fa-lg custom-icon"></i>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle rounded collapsed" aria-expanded="true" data-content-id="overview-content">
+                  <b>Contents</b>
+                </button>
+              </li>
+              <li class="mb-1">
+                <!-- Existing button for "Introduction to PPE Standards" -->
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#introduction-collapse" aria-expanded="false" data-content-id="introduction-content">
+                  Introduction to PPE Standards
+                </button>
+                <div class="collapse" id="introduction-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-one-content" id="sidebar-lesson-one">Lesson 1</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-two-content" id="sidebar-lesson-two">Lesson 2</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-three-content" id="sidebar-lesson-three">Lesson 3</a></li>
+                    <li><a href="#" class="link-dark rounded">Quiz</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#hierarchy-collapse" aria-expanded="false" data-content-id="hierarchy-content">
+                    The Hierarchy of Hazard Controls
+                </button>
+                <div class="collapse" id="hierarchy-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-four-content" id="sidebar-lesson-four">Lesson 4</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-five-content" id="sidebar-lesson-five">Lesson 5</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-six-content" id="sidebar-lesson-six">Lesson 6</a></li>
+                    <li><a href="#" class="link-dark rounded">Quiz</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#types-collapse" aria-expanded="false" data-content-id="types-content">
+                    Types and Selection of PPE
+                </button>
+                <div class="collapse" id="types-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-seven-content" id="sidebar-lesson-seven">Lesson 7</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-eight-content" id="sidebar-lesson-eight">Lesson 8</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-nine-content" id="sidebar-lesson-nine">Lesson 9</a></li>
+                    <li><a href="#" class="link-dark rounded">Quiz</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#compliance-collapse" aria-expanded="false" data-content-id="compliance-content">
+                    Compliance and Responsibilities
+                </button>
+                <div class="collapse" id="compliance-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-ten-content" id="sidebar-lesson-ten">Lesson 10</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-eleven-content" id="sidebar-lesson-eleven">Lesson 11</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-twelve-content" id="sidebar-lesson-twelve">Lesson 12</a></li>
+                    <li><a href="#" class="link-dark rounded">Quiz</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#emergency-collapse" aria-expanded="false" data-content-id="emergency-content">
+                    Emergency Procedures
+                </button>
+                <div class="collapse" id="emergency-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-thirteen-content" id="sidebar-lesson-thirteen">Lesson 13</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-fourteen-content" id="sidebar-lesson-fourteen">Lesson 14</a></li>
+                    <li><a href="#" class="link-dark rounded" data-content-id="lesson-fifteen-content" id="sidebar-lesson-fifteen">Lesson 15</a></li>
+                    <li><a href="#" class="link-dark rounded">Quiz</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-top my-3"></li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                  Finished
+                </button>
+              </li>
+            </ul>
+          </div>  
+        </div>
+        <!-- Main content area where you want to load the content -->
+        <div class="col-md-9" id="main-content">
+          <div id="overview-content" class="content-div">
+            <!-- Your brief overview description should go here -->
+            <img src="/assets/imgs/charter.PNG" alt="Customer Safety Charter Image">
+            <hr>
+            <h1>Overview</h1>
+            <p>Here is what to expect when navigating through this course</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+          </div>
+          <div id="introduction-content" class="content-div">
+            <!-- Your content for Introduction to PPE Standards goes here -->
+            <h1>Introduction to PPE Standards</h1>
+            <p>This is the introduction content...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+          </div>
+          <div class="lessons">
+            <div id="lesson-one-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 1</h1>
+              <p>In this lesson you will cover the ETC....</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+              <p>Mauris ullamcorper varius magna id eleifend. Phasellus tincidunt semper maximus. Mauris et ullamcorper velit, non sollicitudin nibh. Aenean sit amet arcu eu enim vulputate congue. Maecenas condimentum finibus commodo. Aliquam mollis orci id efficitur rhoncus. In hac habitasse platea dictumst. Ut eget cursus nulla. Nam feugiat mollis vulputate. Curabitur nisl metus, fermentum ac ullamcorper vel, dignissim non tortor. Donec gravida dictum velit, eget accumsan mi pretium in. Cras elit orci, lacinia at aliquam vitae, blandit in nisi. Morbi dolor orci, tempus eu velit sed, pellentesque venenatis eros. Maecenas vestibulum eget ex eu cursus. Nulla quis accumsan velit, vel vulputate arcu.</p>
+              <p>In hac habitasse platea dictumst. Curabitur gravida felis ligula, sed facilisis erat vulputate quis. Integer tempus orci id sapien feugiat dapibus. Nullam egestas, diam vel volutpat fringilla, enim mauris gravida massa, in accumsan libero dui et massa. Mauris scelerisque risus vitae sem interdum pretium. Nam facilisis nibh diam, non scelerisque lacus egestas eu. Cras sapien erat, dictum sit amet purus sit amet, lacinia malesuada lorem. Nam facilisis ut est nec finibus. Phasellus varius, erat ultricies sodales gravida, leo turpis consequat justo, non porta nibh eros ut velit.</p>
+              <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mollis, sapien id imperdiet sagittis, enim tellus fermentum mauris, non egestas purus augue eget urna. Mauris fermentum eleifend aliquet. Mauris eget est quam. Morbi at gravida enim, vitae eleifend metus. Etiam quis mattis eros. Pellentesque et diam quis magna consectetur porttitor. Donec malesuada mi eu felis imperdiet, vitae pharetra libero finibus. Etiam vel dolor elit. Vivamus enim leo, feugiat ac fermentum posuere, blandit eget sapien. Ut finibus leo sed lacus luctus tristique. Fusce vel condimentum nibh, non vulputate risus.</p>
+              <p>Praesent blandit, ligula non finibus lacinia, eros risus vehicula massa, eget efficitur eros orci non nunc. Etiam consectetur commodo massa dictum dictum. Suspendisse scelerisque nisi consectetur ex placerat, non commodo lorem elementum. Ut at posuere massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec placerat odio placerat, interdum quam at, tincidunt libero. Suspendisse risus risus, maximus id venenatis quis, vehicula quis sem.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+            </div>
+            <div id="lesson-two-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 2</h1>
+              <p>In this lesson you will cover the WBE....</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+              <p>Mauris ullamcorper varius magna id eleifend. Phasellus tincidunt semper maximus. Mauris et ullamcorper velit, non sollicitudin nibh. Aenean sit amet arcu eu enim vulputate congue. Maecenas condimentum finibus commodo. Aliquam mollis orci id efficitur rhoncus. In hac habitasse platea dictumst. Ut eget cursus nulla. Nam feugiat mollis vulputate. Curabitur nisl metus, fermentum ac ullamcorper vel, dignissim non tortor. Donec gravida dictum velit, eget accumsan mi pretium in. Cras elit orci, lacinia at aliquam vitae, blandit in nisi. Morbi dolor orci, tempus eu velit sed, pellentesque venenatis eros. Maecenas vestibulum eget ex eu cursus. Nulla quis accumsan velit, vel vulputate arcu.</p>
+              <p>In hac habitasse platea dictumst. Curabitur gravida felis ligula, sed facilisis erat vulputate quis. Integer tempus orci id sapien feugiat dapibus. Nullam egestas, diam vel volutpat fringilla, enim mauris gravida massa, in accumsan libero dui et massa. Mauris scelerisque risus vitae sem interdum pretium. Nam facilisis nibh diam, non scelerisque lacus egestas eu. Cras sapien erat, dictum sit amet purus sit amet, lacinia malesuada lorem. Nam facilisis ut est nec finibus. Phasellus varius, erat ultricies sodales gravida, leo turpis consequat justo, non porta nibh eros ut velit.</p>
+              <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mollis, sapien id imperdiet sagittis, enim tellus fermentum mauris, non egestas purus augue eget urna. Mauris fermentum eleifend aliquet. Mauris eget est quam. Morbi at gravida enim, vitae eleifend metus. Etiam quis mattis eros. Pellentesque et diam quis magna consectetur porttitor. Donec malesuada mi eu felis imperdiet, vitae pharetra libero finibus. Etiam vel dolor elit. Vivamus enim leo, feugiat ac fermentum posuere, blandit eget sapien. Ut finibus leo sed lacus luctus tristique. Fusce vel condimentum nibh, non vulputate risus.</p>
+              <p>Praesent blandit, ligula non finibus lacinia, eros risus vehicula massa, eget efficitur eros orci non nunc. Etiam consectetur commodo massa dictum dictum. Suspendisse scelerisque nisi consectetur ex placerat, non commodo lorem elementum. Ut at posuere massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec placerat odio placerat, interdum quam at, tincidunt libero. Suspendisse risus risus, maximus id venenatis quis, vehicula quis sem.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+            </div>
+            <div id="lesson-three-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 3</h1>
+              <p>In this lesson you will cover the ZXQ....</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+              <p>Mauris ullamcorper varius magna id eleifend. Phasellus tincidunt semper maximus. Mauris et ullamcorper velit, non sollicitudin nibh. Aenean sit amet arcu eu enim vulputate congue. Maecenas condimentum finibus commodo. Aliquam mollis orci id efficitur rhoncus. In hac habitasse platea dictumst. Ut eget cursus nulla. Nam feugiat mollis vulputate. Curabitur nisl metus, fermentum ac ullamcorper vel, dignissim non tortor. Donec gravida dictum velit, eget accumsan mi pretium in. Cras elit orci, lacinia at aliquam vitae, blandit in nisi. Morbi dolor orci, tempus eu velit sed, pellentesque venenatis eros. Maecenas vestibulum eget ex eu cursus. Nulla quis accumsan velit, vel vulputate arcu.</p>
+              <p>In hac habitasse platea dictumst. Curabitur gravida felis ligula, sed facilisis erat vulputate quis. Integer tempus orci id sapien feugiat dapibus. Nullam egestas, diam vel volutpat fringilla, enim mauris gravida massa, in accumsan libero dui et massa. Mauris scelerisque risus vitae sem interdum pretium. Nam facilisis nibh diam, non scelerisque lacus egestas eu. Cras sapien erat, dictum sit amet purus sit amet, lacinia malesuada lorem. Nam facilisis ut est nec finibus. Phasellus varius, erat ultricies sodales gravida, leo turpis consequat justo, non porta nibh eros ut velit.</p>
+              <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mollis, sapien id imperdiet sagittis, enim tellus fermentum mauris, non egestas purus augue eget urna. Mauris fermentum eleifend aliquet. Mauris eget est quam. Morbi at gravida enim, vitae eleifend metus. Etiam quis mattis eros. Pellentesque et diam quis magna consectetur porttitor. Donec malesuada mi eu felis imperdiet, vitae pharetra libero finibus. Etiam vel dolor elit. Vivamus enim leo, feugiat ac fermentum posuere, blandit eget sapien. Ut finibus leo sed lacus luctus tristique. Fusce vel condimentum nibh, non vulputate risus.</p>
+              <p>Praesent blandit, ligula non finibus lacinia, eros risus vehicula massa, eget efficitur eros orci non nunc. Etiam consectetur commodo massa dictum dictum. Suspendisse scelerisque nisi consectetur ex placerat, non commodo lorem elementum. Ut at posuere massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec placerat odio placerat, interdum quam at, tincidunt libero. Suspendisse risus risus, maximus id venenatis quis, vehicula quis sem.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus posuere est in iaculis. Pellentesque tincidunt elit vel sodales tempus. Fusce et purus vestibulum, consequat ligula sit amet, porta odio. Curabitur maximus congue nulla a condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce congue lorem neque, eu sagittis orci vestibulum quis. Aliquam sed dui vitae sem faucibus elementum a et erat. Pellentesque porttitor in leo eu gravida. Sed blandit non ante ac suscipit. Mauris ut mattis elit. Nunc ut mi at sem luctus suscipit. Aenean sed molestie tortor, sed vestibulum nulla. Curabitur eu dui eu lacus aliquet posuere fermentum sit amet ex. Nulla sem mauris, volutpat eget purus sollicitudin, blandit feugiat nulla. Duis eget venenatis enim. Maecenas aliquet sollicitudin ipsum, nec pulvinar mauris porttitor vitae.</p>
+            </div>
+          </div>
+          <div id="hierarchy-content" class="content-div">
+            <!-- Your content for The Hierarchy of Hazard Controls goes here -->
+            <h1>The Hierarchy of Hazard Controls</h1>
+            <p>Content goes here...</p>
+          </div>
+          <div class="lessons">
+            <div id="lesson-four-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 4</h1>
+              <p>In this lesson you will cover the ERT....</p>
+            </div>
+            <div id="lesson-five-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 5</h1>
+              <p>In this lesson you will cover the XXM....</p>
+            </div>
+            <div id="lesson-six-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 6</h1>
+              <p>In this lesson you will cover the KLP....</p>
+            </div>
+          </div>
+          <div id="types-content" class="content-div">
+            <!-- Your content for The Hierarchy of Hazard Controls goes here -->
+            <h1>Types and Selection of PPE</h1>
+            <p>Content goes here...</p>
+          </div>
+          <div class="lessons">
+            <div id="lesson-seven-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 7</h1>
+              <p>In this lesson you will cover the TRE....</p>
+            </div>
+            <div id="lesson-eight-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 8</h1>
+              <p>In this lesson you will cover the GHE....</p>
+            </div>
+            <div id="lesson-nine-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 9</h1>
+              <p>In this lesson you will cover the QWE....</p>
+            </div>
+          </div>
+          <div id="compliance-content" class="content-div">
+            <!-- Your content for The Hierarchy of Hazard Controls goes here -->
+            <h1>Compliance and Responsibilities</h1>
+            <p>Content goes here...</p>
+          </div>
+          <div class="lessons">
+            <div id="lesson-ten-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 10</h1>
+              <p>In this lesson you will cover the TQT....</p>
+            </div>
+            <div id="lesson-eleven-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 11</h1>
+              <p>In this lesson you will cover the ZSE....</p>
+            </div>
+            <div id="lesson-twelve-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 12</h1>
+              <p>In this lesson you will cover the JAE....</p>
+            </div>
+          </div>
+          <div id="emergency-content" class="content-div">
+            <!-- Your content for The Hierarchy of Hazard Controls goes here -->
+            <h1>Emergency Procedures</h1>
+            <p>Content goes here...</p>
+          </div>
+          <div class="lessons">
+            <div id="lesson-thirteen-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 13</h1>
+              <p>In this lesson you will cover the LSD....</p>
+            </div>
+            <div id="lesson-fourteen-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 14</h1>
+              <p>In this lesson you will cover the IUV....</p>
+            </div>
+            <div id="lesson-fifteen-content" class="content-div">
+              <!-- Your content for Introduction to PPE Standards goes here -->
+              <h1>Lesson 15</h1>
+              <p>In this lesson you will cover the VOD....</p>
+            </div>
+          </div>
+          <!-- Repeat for each content section -->
+        </div>
+      </div>
+    </div>
+      
+<script>
+  // Collect all the content sections in order
+  const contentSections = Array.from(document.querySelectorAll('[data-content-id]')).map(link => link.getAttribute('data-content-id'));
+
+  function getCurrentSectionIndex() {
+    // Find the currently displayed content's index
+    const current = document.querySelector('.content-div:not([style*="display: none"])');
+    return current ? contentSections.indexOf(current.id) : -1;
+  }
+
+  function showPreviousContent() {
+    const currentIndex = getCurrentSectionIndex();
+    if (currentIndex > 0) {
+      // Show the previous section
+      showContent(contentSections[currentIndex - 1]);
+    } else {
+      // You can handle the logic here if it's the first item.
+      // For example, do nothing or show a message to the user:
+      console.log("You are at the beginning of the course.");
+    }
+  }
+
+  function showNextContent() {
+    const currentIndex = getCurrentSectionIndex();
+    if (currentIndex < contentSections.length - 1) {
+      // Show the next section
+      showContent(contentSections[currentIndex + 1]);
+    } else {
+      // Optionally wrap around to the first section
+      console.log("You are at the end of the course.");
+    }
+  }
+
+  function markAsComplete() {
+    const currentIndex = getCurrentSectionIndex();
+    if (currentIndex !== -1) {
+      // Get the corresponding sidebar item using the current content ID
+      const sidebarItemId = 'sidebar-' + contentSections[currentIndex].split('-content')[0];
+      const sidebarItem = document.getElementById(sidebarItemId);
+
+      // Check if the sidebar item exists and if it doesn't have the completed class already
+      if (sidebarItem && !sidebarItem.classList.contains('completed')) {
+        // Add a class to indicate the item is complete
+        sidebarItem.classList.add('completed');
+
+        // Create the SVG element for the checkmark
+        const checkmarkSVG = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        checkmarkSVG.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        checkmarkSVG.setAttribute('height', '1.25em');
+        checkmarkSVG.setAttribute('viewBox', '0 0 448 512');
+        checkmarkSVG.classList.add('checkmark-icon'); // Add a class for styling
+        checkmarkSVG.innerHTML = '<path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" fill="#b6dc79"></path>';
+
+        // Append the SVG to the sidebar item
+        sidebarItem.appendChild(checkmarkSVG);
+      }
+    }
+  }
+
+  // Function to hide all content
+  function hideAllContent() {
+    document.querySelectorAll('.content-div').forEach(function(content) {
+      content.style.display = 'none';
+    });
+  }
+
+  // Function to show content for a specific section
+  function showContent(sectionId) {
+    hideAllContent();
+    var contentToShow = document.getElementById(sectionId);
+    if (contentToShow) {
+      contentToShow.style.display = 'block';
+    }
+  }
+
+  // Attach event listeners to your sidebar toggle buttons
+  document.querySelectorAll('.btn-toggle').forEach(function(toggleButton) {
+    toggleButton.addEventListener('click', function() {
+      var contentId = toggleButton.getAttribute('data-content-id');
+      if (contentId) {
+        showContent(contentId);
+      }
+    });
+  });
+
+  // Attach event listeners to the dropdown links
+  document.querySelectorAll('.btn-toggle-nav a').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default anchor behavior
+      var contentId = link.getAttribute('data-content-id');
+      if (contentId) {
+        showContent(contentId);
+      }
+    });
+  });
+
+  // Attach event listeners to the Prev and Next buttons
+  document.getElementById('prev-button').addEventListener('click', showPreviousContent);
+  document.getElementById('next-button').addEventListener('click', showNextContent);
+  // Add an event listener to the Mark as Complete button
+  document.getElementById('mark-complete-button').addEventListener('click', markAsComplete);
+</script>
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

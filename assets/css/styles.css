@@ -1,0 +1,184 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+/* Styles for navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.logo-link {
+    display: inline-block; /* Allows for proper spacing and clickable area */
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.logo {
+    display: block; /* Ensures the image doesn't have extra space around it */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px; /* Space between menu items */
+}
+
+.nav-link {
+    color: #262626;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none; /* Removes underline from links */
+    display: flex; /* Align icon with text */
+    align-items: center; /* Center icon with text vertically */
+    margin-right: 8px; /* Adjusted space for the icon */
+}
+
+.nav-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; /* Space between icon and text */
+    order: -1; /* Positions the icon before the text */
+}
+
+/* Styles to change link appearance on hover */
+.nav-link:hover, .logo-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.badge.even-larger-badge {
+    font-size: 1.1em;
+  }
+
+.custom-icon {
+    margin-left: 20px; /* Adjust the value as needed */
+}
+
+:root {
+    --white-100: #EFEFEF;
+    --white-50: #FFF;
+    --blue-50: #EFF4FF;
+    --blue-600: #2563EB;
+}
+
+/* Add this to your CSS file */
+.content-header {
+    display: inline-flex;
+    padding: 1.25rem 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white-100, #EFEFEF);
+    background: var(--white-50, #FFF);
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.0625rem 0.875rem;
+    border-radius: 1.875rem;
+    background: var(--blue-50, #EFF4FF);
+    transform: rotate(-90deg);
+    width: fit-content;
+}
+
+.circle svg {
+    width: 0.75rem;
+    height: 0.375rem;
+    stroke-width: 2px;
+    stroke: var(--blue-600, #2563EB);
+    transform: rotate(90deg);
+}
+
+.course-text {
+    color: var(--blue-600, #2563EB);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1; /* 100% */
+    margin-left: 0.625rem; /* Adjust as needed */
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    height: calc(100vh - 4rem); /* Adjust the 4rem based on your header's height */
+    padding: 20px; /* Add padding as needed */
+    overflow-y: auto; /* Add vertical scrollbar when needed */
+    text-align: left;
+}
+
+#main-content img {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-div {
+    display: none;
+    width: 100%; /* Set width to fill the container */
+    max-width: 800px; /* Max width for the content area, adjust as necessary */
+    margin-bottom: 20px; /* Space at the bottom of each content div */
+}
+
+.content-div img {
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through; /* Strike through text to indicate completion */
+    color: #6c757d; /* Optional: change color to indicate the item is inactive/disabled */
+}
+
+/* Styles for the checkmark icon */
+.checkmark-icon {
+    margin-left: 10px; /* Adjust the spacing as needed */
+    vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 280px;
+        max-width: 280px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo-link {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-icon {
+        margin-right: 8px; /* Keep space between icon and text */
+        position: relative; /* Keeps icon in line with the text */
+    }
+}
