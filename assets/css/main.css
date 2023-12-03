@@ -491,9 +491,99 @@ body {
     margin-left: 3.5rem;
 }
 
+.land-acknowledgement {
+    background-color: #474646; /* Or any other color you prefer */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.land-acknowledgement .container {
+    max-width: 1200px; /* Or the max-width of your content area */
+    margin: auto;
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    gap: 20px; /* Adjust the space between elements */
+}
+
+
+.land-acknowledgement .land-icon {
+    width: 151px; /* Set the width as specified */
+    height: 151px; /* Set the height as specified */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.land-acknowledgement h2,
+.land-acknowledgement p {
+    text-align: left; /* Align text to the left */
+}
+
+.land-acknowledgement h2 {
+    margin-top: 0; /* Adjust top margin as needed */
+    margin-bottom: 0.5em; /* Space between the heading and the paragraph */
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: 700; /* Adjust the weight as needed */
+}
+
+.land-acknowledgement p {
+    font-size: 16px; /* Adjust the size as needed */
+    line-height: 1.6; /* Adjust the line height as needed */
+    max-width: 800px; /* Adjust the max-width as needed to control text line length */
+    margin-top: 0; /* Adjust top margin as needed */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+/* Additional container for text to stack h2 on top of p */
+.land-acknowledgement .text-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid white; /* White border for the outline */
+    outline: none; /* Remove outline */
+    background-color: #B6DC79; /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Make it round */
+    font-size: 18px; /* Increase font size */
+    width: 50px; /* Set a fixed width for the circle */
+    height: 50px; /* Set a fixed height for the circle */
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Ensure text is centered (if any text is used) */
+    line-height: 1; /* Normal line height to avoid affecting flexbox centering */
+}
+
+#myBtn:hover {
+    background-color: #839e56; /* Change background color on hover */
+}
+
+/* Adjust the size of the icon if necessary */
+.feather {
+    width: 24px; /* Adjust width of the icon */
+    height: 24px; /* Adjust height of the icon */
+    stroke-width: 2; /* Adjust stroke width as needed */
+}
+
+
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+
+    body, .main-container { /* Use the appropriate selector for your main container */
+        overflow-x: hidden; /* This prevents horizontal scrolling of the entire page */
+        max-width: 100vw; /* Ensures the body doesn't extend beyond the viewport width */
+    }
+
     .navbar {
         flex-direction: column;
         padding: 10px;
@@ -652,28 +742,98 @@ body {
         margin: auto;
     }
 
-    .more-card-container {
+    .more-path h2 {
+        font-size: 1.5rem; /* Smaller font size for the heading */
+        margin: 0; /* Adjust margin */
+        text-align: center; /* Center align the title */
+    }
+
+    .more-path {
+        padding: 1rem; /* Adjust padding for smaller screens */
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        gap: 1rem; /* Adjust gap as needed */
-        margin: 0 1rem; /* Adjust margin as needed */
-        padding-bottom: 1rem; /* Add padding to allow space for scrollbar */
+        overflow-y: hidden;
+        gap: 10px;
+        padding: 10px 0;
+        margin: 0; /* Resetting margin to avoid pushing content off-screen */
+        -webkit-overflow-scrolling: touch;
     }
 
     .more-card {
-        flex: 0 0 auto; /* Cards don't grow but are automatically sized */
-        min-width: 60vw; /* Minimum width of the card */
-        max-width: 80vw; /* Maximum width of the card */
-        width: auto; /* Width auto for flexibility */
-        /* Additional styles for the cards */
+        flex: 0 0 180px; /* Set a fixed width for the cards */
+        height: auto; /* Height adjusts to content */
+    }
+    
+
+    /* Adjustments to card details for smaller screens */
+    .more-card-title, .more-card-subtitle {
+        font-size: 1.2rem; /* Smaller font size */
+        padding: 0 5px; /* Padding inside the card for the text */
+        text-align: center; /* Center-align the text */
     }
 
-    /* Adjust the width and layout of the elements inside the card if necessary */
-    .more-card .more-card-top img {
-        width: auto; /* Adjust if needed */
-        max-width: 100%; /* Ensure image does not overflow the card */
-        height: auto; /* Adjust for maintaining aspect ratio */
+    .more-card-button {
+        font-size: 0.8rem; /* Smaller font size for button text */
+        padding: 5px 10px; /* Adjust padding of the button */
+        margin: 10px auto; /* Center button and provide spacing from text */
+    }
+
+    /* Optional: Styling for the scrollbar */
+    .more-path::-webkit-scrollbar {
+        height: 6px; /* Smaller scrollbar height */
+    }
+
+    .more-path::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+    }
+
+    .more-path::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .land-acknowledgement .container {
+        flex-direction: column; /* Stack children elements vertically */
+        text-align: center; /* Center the text for smaller screens */
+    }
+
+    .land-acknowledgement .land-icon {
+        margin-bottom: 10px; /* Add some space below the icon */
+        align-self: left; /* Center the icon horizontally */
+    }
+
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 20px; /* Adjusted for smaller screens */
+        z-index: 99; /* Make sure it does not overlap */
+        border: 2px solid white; /* White border for the outline */
+        outline: none; /* Remove outline */
+        background-color: #B6DC79; /* Set a background color */
+        color: rgb(0, 0, 0); /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        border-radius: 50%; /* Make it round */
+        font-size: 18px; /* Increase font size */
+        width: 40px; /* Adjusted size for smaller screens */
+        height: 40px; /* Adjusted size for smaller screens */
+        display: flex; /* Enable flexbox */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        text-align: center; /* Ensure text is centered (if any text is used) */
+        line-height: 1; /* Normal line height to avoid affecting flexbox centering */
+    }
+
+    #myBtn:hover {
+        background-color: #839e56; /* Change background color on hover */
+    }
+
+    /* Adjust the size of the icon if necessary */
+    .feather {
+        width: 24px; /* Icon size can remain the same or adjust as needed */
+        height: 24px; /* Icon size can remain the same or adjust as needed */
+        stroke-width: 2; /* Adjust stroke width as needed */
     }
 }
 
